@@ -1,0 +1,6 @@
+The references used to develop the application.
+
+>>https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/
+>>MSDN
+>>https://codepen.io/noahblon/pen/CsxfH
+>>https://en.wikipedia.org/wiki/Electronic_color_code

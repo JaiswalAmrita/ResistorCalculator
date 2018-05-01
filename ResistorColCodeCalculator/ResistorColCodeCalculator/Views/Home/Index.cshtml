@@ -1,0 +1,74 @@
+﻿@model ResistorColCodeCalculator.Models.DefaultColorSet
+
+<hr />
+<hr />
+<hr />
+
+@section Scripts{
+    <script src="~/RCCCScript/RCCC.js"></script>
+   
+    @Scripts.Render("~/bundles/jqueryval")
+}
+    <div class="PageContainer">
+        <div class="resistorImage"/>
+        <div id="BandFirst" class="colorband"></div>
+        <div id="BandSecond" class="colorband"></div>
+        <div id="BandThird" class="colorband"></div>
+        <div id="BandFourth" class="colorband"></div>
+    </div>
+        <!--Dropdown list to select the color-->
+        <div class="dropDownListColorSelector">
+            <div>
+                @Html.Label("BandA", "First Band", htmlAttributes: new { @class = "colorbandLabelText" })
+                @Html.DropDownListFor(m => m.ohmValuesList, new SelectList(Model.ohmValuesList, "Key", "Value"), htmlAttributes: new { @class = "form-control", id = "FirstBand" })
+            </div>
+            <div>
+                @Html.Label("BandB", "Second Band", htmlAttributes: new { @class = "colorbandLabelText" })
+                @Html.DropDownListFor(m => m.ohmValuesList, new SelectList(Model.ohmValuesList, "Key", "Value"), htmlAttributes: new { @class = "form-control", id = "SecondBand" })
+            </div>
+            <div>
+                @Html.Label("BandC", "Third Band or Multiplier", htmlAttributes: new { @class = "colorbandLabelText" })
+                @Html.DropDownListFor(m => m.MultiplierValuesList, new SelectList(Model.MultiplierValuesList, "Key", "Value"), htmlAttributes: new { @class = "form-control", id = "ThirdBand" })
+            </div>
+            <div>
+                @Html.Label("BandD", "Fourth Band or Tolerance", htmlAttributes: new { @class = "colorbandLabelText" })
+                @Html.DropDownListFor(m => m.ToleranceValueList, new SelectList(Model.ToleranceValueList, "Key", "Value"), htmlAttributes: new { @class = "form-control", id = "FourthBand" })
+            </div>
+        </div>
+        <div id="errorDiv"></div>
+        <div id="resultDiv" class="outputClass">
+    <!--OUTPUT values of resistor, tolerance, min resistance and max resistance based on provided color band values-->
+    <div>
+        <div>
+            @Html.Label("lblResistorValue", "Resistor Value")
+        </div>
+        <div class="disable">
+            @Html.TextBox("txtResistorValue", "0", htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+        </div>
+    </div>
+    <div>
+        <div>
+            @Html.Label("lblTolerance", "Tolerance")
+        </div>
+        <div>
+            @Html.TextBox("txtTolerance", "0", htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+        </div>
+    </div>
+    <div>
+        <div>
+            @Html.Label("lblMinResistance", "Minimum Resistance")
+        </div>
+        <div>
+            @Html.TextBox("txtMinResistance", "0", htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+        </div>
+    </div>
+    <div>
+        <div>
+            @Html.Label("lblMaxResistance", "Maximum Resistance")
+        </div>
+        <div>
+            @Html.TextBox("txtMaxResistance", "0", htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+        </div>
+    </div>
+</div>
+

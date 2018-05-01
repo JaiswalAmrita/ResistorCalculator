@@ -1,0 +1,5 @@
+C:\Users\ctz5011\Desktop\HomeDepotCodeExc\ResistorColCodeCalculator\ResColCodeCalculator\bin\Debug\ColorCodeCalculator.dll
+C:\Users\ctz5011\Desktop\HomeDepotCodeExc\ResistorColCodeCalculator\ResColCodeCalculator\bin\Debug\ColorCodeCalculator.pdb
+C:\Users\ctz5011\Desktop\HomeDepotCodeExc\ResistorColCodeCalculator\ResColCodeCalculator\obj\Debug\ResColCodeCalculator.csprojResolveAssemblyReference.cache
+C:\Users\ctz5011\Desktop\HomeDepotCodeExc\ResistorColCodeCalculator\ResColCodeCalculator\obj\Debug\ColorCodeCalculator.dll
+C:\Users\ctz5011\Desktop\HomeDepotCodeExc\ResistorColCodeCalculator\ResColCodeCalculator\obj\Debug\ColorCodeCalculator.pdb
